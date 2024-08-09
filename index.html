@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Bat ball stump game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h1>BAT BALL STUMP GAME</h1>
+  <button onclick="
+ 
+   //this is function to generate random numbers
+   generatecomputerchoice();
+
+  let resultMsg;
+  if (computerChoice === 'Ball') {
+    resultMsg = 'User won.';
+      score.win++;
+
+
+  } else if (computerChoice === 'Bat') {
+    resultMsg = `It's a tie`;
+      score.tie++;
+
+
+  } else if (computerChoice === 'Stump') {
+    resultMsg = 'Computer has won';
+      score.lost++;
+  }
+
+  localStorage.setItem('Score', JSON.stringify(score));
+  
+
+  alert(`You have chosen Bat. Computer choice is ${computerChoice} and ${resultMsg}
+  'won'=${score.win},'lost'=${score.lost},'tie'${score.tie},
+  
+  `);
+ 
+  
+  ">BAT</button>
+ 
+ 
+ 
+ 
+ <button 
+   onclick="
+  
+  //this is function to generate random numbers
+   
+     generatecomputerchoice();
+
+   if (computerChoice === 'Ball') {
+    resultMsg = ' its a tie';
+      score.tie++;
+
+   } else if (computerChoice === 'Bat') {
+    resultMsg = `computer has won`;
+     score.lost++;
+
+
+   } else if (computerChoice === 'Stump') {
+    resultMsg = 'user has won';
+     score.win++;
+
+
+    }
+
+    
+
+   
+    localStorage.setItem('Score', JSON.stringify(score));
+   alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}
+   'won'=${score.win},'lost'=${score.lost},'tie'${score.tie}
+  
+   `);
+   
+  
+    " >BALL</button>
+ 
+ 
+ <button
+ onclick="
+ //this is function to generate random numbers
+  generatecomputerchoice();
+
+
+ if (computerChoice === 'Ball') {
+   resultMsg = 'computer has won';
+    score.lost++;
+
+ } else if (computerChoice === 'Bat') {
+   resultMsg = `user has won`;
+    score.win++;
+ } else if (computerChoice === 'Stump') {
+   resultMsg = 'Its a tie';
+    score.tie++;
+ }
+ 
+    localStorage.setItem('Score', JSON.stringify(score));
+
+ alert(`You have chosen stump. Computer choice is ${computerChoice} and 
+ ${resultMsg}
+ 'won'=${score.win},'lost'=${score.lost},'tie'${score.tie} `);
+ 
+ 
+ 
+ ">STUMP</button>
+
+
+<button onclick="localStorage.clear()
+
+score={
+  
+     win: 0,
+     tie:0,
+     lost:0,
+
+}
+
+
+
+">RESET</button>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
